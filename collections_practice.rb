@@ -43,6 +43,7 @@ def merge_data(d1, d2)
 end
 
 def find_cool(array)
+<<<<<<< HEAD
   cool_arr = []
   array.each do |item|
     cool_arr << item if item.has_value? ("cool")
@@ -63,3 +64,23 @@ def organize_schools(school_hash)
   org_schools
 end
   
+=======
+  array.each do |item|
+    item.select {|k, v| v == "cool"}
+  end
+  binding.pry
+end
+
+h =    [
+            {
+                   :name => "ashley",
+            :temperature => "sort of cool"
+        },
+            {
+                   :name => "blake",
+            :temperature => "cool"
+        }
+    ]
+    
+find_cool(h)
+>>>>>>> 814d8ac1a29a609e8d2efed058721ab5e2000960
